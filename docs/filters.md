@@ -88,7 +88,7 @@ public class PersonFilterType
         descriptor
             .BindFieldsExplicitly()
             .Filter(t => t.Name)
-            .BindOperationsExplicitly()
+            .BindFiltersExplicitly()
             .AllowEquals().Name("equals").And()
             .AllowContains().Name("contains").And()
             .AllowIn().Name("in");
